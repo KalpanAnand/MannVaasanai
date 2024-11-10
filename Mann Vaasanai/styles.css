@@ -1,0 +1,326 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Animated Background */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: background-animation 20s infinite alternate;
+}
+
+@keyframes background-animation {
+    0% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 2rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FF6347;
+}
+
+/* Header Content */
+.header-content {
+    text-align: center;
+    padding: 150px 0;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    background-color: #FF6347;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF4500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+}
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF5722;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.menu-container {
+    padding: 20px;
+}
+
+/* Menu Section Styling */
+.menu-section {
+    margin-bottom: 40px;
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Menu Box Styling */
+.menu-box {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-box:hover {
+    transform: scale(1.05);
+}
+
+.menu-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.menu-box p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FF5722;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .menu-box {
+        width: 100%;
+    }
+}
+
+.starters {
+    background-color: #FFF3E0;
+}
+
+.meals {
+    background-color: #C8E6C9;
+}
+
+.drinks {
+    background-color: #B2EBF2;
+}
+
+.sweets {
+    background-color: #F8BBD0;
+}
+
+
+
+
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3e7; /* Light beige for the main background */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #8B4513; /* Rich brown color */
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Menu Container */
+.menu-container {
+    padding: 30px;
+}
+
+/* Menu Section Styling */
+.menu-section {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Category Image */
+.category-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Section Title */
+.menu-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding: 15px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Background Colors for Each Section */
+.starters {
+    background-color: #FFCC80; /* Light orange for starters */
+}
+
+.meals {
+    background-color: #C8E6C9; /* Soft green for meals */
+}
+
+.drinks {
+    background-color: #BBDEFB; /* Light blue for drinks */
+}
+
+.sweets {
+    background-color: #F3E5F5; /* Light lavender for sweets */
+}
+
+/* Menu Grid for Items */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Menu Box Styling */
+.menu-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-box:hover {
+    transform: translateY(-10px);
+    background-color: #FFF3E0; /* Soft beige hover color */
+}
+
+.menu-box h3 {
+    font-size: 1.5rem;
+    color: #8B4513; /* Deep brown for headings */
+    margin-bottom: 10px;
+}
+
+.menu-box p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.menu-box .price {
+    font-size: 1.2rem;
+    color: #D84315; /* Dark orange for prices */
+    font-weight: bold;
+}

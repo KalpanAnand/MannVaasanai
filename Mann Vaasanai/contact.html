@@ -1,0 +1,218 @@
+<!-- Add Font Awesome for Icons -->
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="https://mannvaasanai26.blogspot.com/" class="nav-link" target="_blank">Blog</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+<!-- Response Section -->
+<section id="response" class="response-section">
+    <div class="container">
+        <!-- Thank You Message -->
+        <h2 class="response-message">Thank You for Getting in Touch!</h2>
+        
+        <!-- Response Details -->
+        <p class="response-detail">Thank you for choosing Mann Vaasanai—we can't wait to serve you our delicious traditional flavors!</p>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mann.vaasanai26@gmail.com">mann.vaasanai26@gmail.com</a></p>
+            <p><i class="fas fa-phone-alt"></i> <strong>Phone Number:</strong> <a href="tel:+919876543210">9876543210</a></p>
+            <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/_mann_vaasanai_/" target="_blank">_mann_vaasanai_</a></p>
+            <p><strong>Address:</strong> Main Road, Permalpuram, Tirunelveli, 627007</p>
+        </div>
+
+        <!-- Encouraging Slogan -->
+        <div class="slogan">
+            <p>"Taste the Tradition in Every Bite!"</p>
+            <p>"Flavors that Speak to Your Soul!"</p>
+        </div>
+
+        <!-- Return to Homepage Button -->
+        <a href="index.html" class="return-home-button">Return to Homepage</a>
+    </div>
+</section>
+
+<style>
+    /* Navigation Bar Styles */
+    .navbar {
+        background-color: #333; /* Dark background for navbar */
+        padding: 15px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Keep navbar on top of the page */
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        transition: color 0.3s ease-in-out;
+        display: inline-block;
+    }
+
+    .navbar ul li a:hover {
+        color: #ff6347; /* Tomato color for hover effect */
+    }
+
+    /* Response Section */
+    .response-section {
+        padding: 60px 20px;
+        color: #fff;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(45deg, #008080, #20b2aa, #ff6347, #ff4500); /* Updated Gradient Background */
+        background-size: 300% 300%;
+        animation: gradientAnimation 6s ease infinite; /* Animation for the background */
+        border-radius: 10px;
+    }
+
+    .response-message {
+        font-size: 2.8em;
+        font-weight: bold;
+        color: #fff; /* White text */
+        margin-bottom: 20px;
+        animation: fadeInUp 2s ease-in-out;
+    }
+
+    .response-detail {
+        font-size: 1.5em;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #fff;
+        animation: fadeInUp 2.5s ease-in-out;
+    }
+
+    .contact-info {
+        font-size: 1.3em;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .contact-info p {
+        margin-bottom: 10px;
+        line-height: 1.8;
+    }
+
+    .contact-info a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-info i {
+        margin-right: 10px;
+        color: #fff;
+    }
+
+    .slogan {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff; /* White color for slogans */
+        margin-bottom: 40px;
+    }
+
+    .slogan p {
+        margin-bottom: 15px;
+        animation: fadeInUp 3s ease-in-out;
+    }
+
+    .return-home-button {
+        display: inline-block;
+        background-color: #fff; /* White button for contrast */
+        color: #ff6347; /* Tomato red for button text */
+        font-size: 1.3em;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .return-home-button:hover {
+        background-color: #ff4500; /* Darker red on hover */
+    }
+
+    /* Animation for Fade In Effect */
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Animation for Background Gradient */
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .navbar ul {
+            text-align: center;
+        }
+
+        .navbar ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .response-message {
+            font-size: 2.2em;
+        }
+
+        .response-detail {
+            font-size: 1.2em;
+        }
+
+        .slogan {
+            font-size: 1.1em;
+        }
+
+        .contact-info {
+            font-size: 1.1em;
+        }
+
+        .return-home-button {
+            font-size: 1.2em;
+            padding: 12px 25px;
+        }
+    }
+</style>
