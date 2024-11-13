@@ -12,21 +12,12 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mann Vaasanai - Authentic Tirunelveli Flavors">
-    <title>Mann Vaasanai | Authentic Tirunelveli Flavors</title>
+    <title>About Us - Mann Vaasanai</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-
-
 <body>
-
-    <!-- Animated Background -->
-    <div class="background">
-        <img src="assets/restaurant-banner.jpg" class="bg-img" alt="Restaurant Banner">
-    </div>
-
-    <!-- Navigation Menu -->
+    <!-- Navigation Bar (Positioned at the Top) -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
@@ -36,14 +27,204 @@
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav>
+    <!-- About Us Section Content -->
+    <section id="about-us" class="about-us-section">
+        <div class="container">
+            <h2>Welcome to Mann Vaasanai – A Taste of Tradition in Tirunelveli</h2>
 
-    <!-- Header Content -->
-    <div class="header-content">
-        <h1>Welcome to Mann Vaasanai</h1>
-        <p>Discover Authentic Tirunelveli Flavors, Right Here in Your City</p>
-        <!-- <a href="menu.html" class="cta-button">Explore Our Menu</a> -->
-    </div>
+            <!-- Animated Image 1 -->
+            <div class="image-container">
+                <img src="assets/img1.jpg" alt="South Indian Dishes" class="img-animated" />
+            </div>
 
-    <script src="script.js"></script>
+            <p>
+                Located in the heart of Tirunelveli, Mann Vaasanai brings the authentic flavors of South India to your plate. Our mission is to provide a warm, inviting atmosphere where you can experience the rich and diverse culinary traditions of Tamil Nadu and beyond. From crispy dosas to aromatic sambar, every dish we serve is prepared with the freshest ingredients and traditional cooking methods passed down through generations.
+            </p>
+            <p>
+                We take pride in offering a wide range of vegetarian dishes that not only honor the flavors of South India but also offer wholesome, nutritious meals for every palate. Whether you're here for a quick snack or a full traditional thali, our menu is designed to give you a taste of home, with a focus on bold spices, fragrant herbs, and heartwarming recipes.
+            </p>
+
+            <h3>Our Philosophy</h3>
+            <p>
+                Mann Vaasanai means "The Fragrance of the Earth," and that's exactly what we aim to bring to your table – the essence of nature, culture, and tradition, all captured in every bite. We believe that food is not just nourishment, but a way to connect with others, celebrate culture, and create memories.
+            </p>
+            <p>
+                Whether you're a regular or a first-time visitor, we want you to feel like part of our family. With friendly service, a comfortable atmosphere, and dishes made with love, we strive to provide an unforgettable dining experience every time you walk through our doors.
+            </p>
+
+            <h3>Our Story</h3>
+            <p>
+                Founded with a passion for preserving the culinary heritage of South India, Mann Vaasanai is committed to offering an authentic and satisfying dining experience. What began as a small dream to share the vibrant flavors of our home has now grown into a beloved spot in Tirunelveli, where locals and visitors can savor the best of South Indian vegetarian cuisine.
+            </p>
+
+            <h3>Join Us</h3>
+            <p>
+                We invite you to enjoy the taste of tradition at Mann Vaasanai, where every meal is crafted with care, served with a smile, and made to bring a little piece of South India to your table. Visit us today in Tirunelveli and experience the essence of South Indian hospitality!
+            </p>
+
+            <!-- Animated Image 2 -->
+            <div class="image-container">
+                <img src="assets/img2.jpg" alt="South Indian Thali" class="img-animated" />
+            </div>
+
+            <!-- Traditional Food Slogans -->
+            <div class="slogans">
+                <p>"Spices, Love, and Tradition in Every Bite!"</p>
+                <p>"Savor the Flavors, Feel the Tradition!"</p>
+                <p>"Where South India Meets Your Taste Buds!"</p>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #333; /* Dark background for navbar */
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Keep navbar on top of the page */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: color 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff6347; /* Tomato color for hover effect */
+        }
+
+        /* About Us Section Styles */
+        .about-us-section {
+            padding: 50px 20px;
+            color: #333;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            overflow: hidden;
+            animation: backgroundAnimation 10s ease-in-out infinite; /* Added animation for background */
+        }
+
+        /* Keyframes for background animation */
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(to right, #008080, #20b2aa); /* Teal gradient */
+            }
+            25% {
+                background: linear-gradient(to right, #ff7f50, #ff6347); /* Coral gradient */
+            }
+            50% {
+                background: linear-gradient(to right, #00008b, #4682b4); /* Dark blue gradient */
+            }
+            75% {
+                background: linear-gradient(to right, #ff6347, #20b2aa); /* Mix of Coral and Teal */
+            }
+            100% {
+                background: linear-gradient(to right, #008080, #20b2aa); /* Revert to Teal gradient */
+            }
+        }
+
+        .about-us-section h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #ff6347; /* Tomato red for vibrant header */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us-section h3 {
+            font-size: 2em;
+            margin-top: 30px;
+            color: #006400; /* Dark green for headings */
+        }
+
+        .about-us-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-container {
+            margin: 30px 0;
+            display: inline-block;
+        }
+
+        .img-animated {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .img-animated:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        .slogans {
+            margin-top: 40px;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #8b4513; /* Brown color for slogans */
+        }
+
+        .slogans p {
+            margin-bottom: 15px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                text-align: center;
+            }
+
+            .navbar ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .about-us-section h2 {
+                font-size: 2.2em;
+            }
+
+            .slogans {
+                font-size: 1.1em;
+            }
+        }
+    </style>
 </body>
 </html>
